@@ -11,9 +11,12 @@
 
 
 <body ng-controller="mainCtrl">
-    <h1>Welcome</h1>
-    <button ui-sref="home">Enter</button>
-    </br>
+    <div ng-show="showMenu">
+        <h1>This is the Home Page</h1>
+        <button ui-sref="home">Home</button>
+        <button ui-sref="parks">Parks</button>
+        <button ui-sref="contact">Contact</button>
+    </div>
     {{test}}{{test2}}
     <ui-view></ui-view>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>

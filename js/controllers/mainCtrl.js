@@ -1,12 +1,12 @@
-angular.module('mainApp').controller('mainCtrl', function($scope, mainSrv) {
+angular.module('mainApp').controller('mainCtrl', function($scope, mainSrv, $location) {
     $scope.test = "testing testing"
     $scope.test2 = mainSrv.test
 
-    $scope.getParks = function() {
-        mainSrv.getParksData().then(function(response) {
-            console.log(response)
-            $scope.parks = response.data
-        })
+    if ($location.path() === '/') {
+        $scope.showMenu = false;
+    } else {
+        $scope.showMenu = true;
     }
-    $scope.getParks();
+    console.log($location.path())
+
 })

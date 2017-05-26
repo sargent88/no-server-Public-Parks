@@ -1,12 +1,16 @@
 <h1>All the Parks</h1>
-<section ng-controller="mainCtrl">
-    <div ng-repeat="park in parks">
+<section>
+
+    <input type="text" placeholder="Park Name" ng-model="filterText.park">
+    <div ng-repeat="park in parks | filter: filterText">
         <ul>
-            <li>{{park.name}}</li>
-            <li>{{park.street}}</li>
-            <li>{{park.city}}</li>
+            <strong>{{park.park}}</strong>
+            <div class='address'>{{park.location_1_location}}</div>
+            <div class='citystate'>{{park.location_1_city}}</div>
+            <div class='amenities'>{{park.amenities}}</div>
+            <button ui-sref="map({id: park.park})">View Map</button>
         </ul>
     </div>
+    </div>
 
-    <button ui-sref="map">View Map</button>
 </section>

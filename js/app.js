@@ -15,8 +15,9 @@ angular.module('mainApp', ['ui.router'])
                 controller: 'parksCtrl'
             })
             .state('map', {
-                url: '/map',
-                templateUrl: '../views/map.html'
+                url: '/map/:id',
+                templateUrl: '../views/map.html',
+                controller: 'mapCtrl'
             })
             .state('contact', {
                 url: '/contact',

@@ -1,4 +1,4 @@
-angular.module('mainApp').controller('mainCtrl', function($scope, mainSrv, $location) {
+angular.module('mainApp').controller('mainCtrl', function($scope, mainSrv, $stateParams, $location, parksSrv) {
     $scope.test = "testing testing"
     $scope.test2 = mainSrv.test
 
@@ -7,6 +7,7 @@ angular.module('mainApp').controller('mainCtrl', function($scope, mainSrv, $loca
     } else {
         $scope.showMenu = true;
     }
-    console.log($location.path())
+    // console.log($location.path())
+
 
 })

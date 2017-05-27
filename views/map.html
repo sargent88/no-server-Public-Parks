@@ -1,5 +1,13 @@
-<h1>This is a Map</h1>
+<section class="MapBackground">
+    <h1 class="MapText">This is a Map</h1>
+    <section class="mapbox">
 
-{{populateMap}}
+        <ul>
+            <strong>{{populateMap.park}}</strong>
+            <div class="address">{{populateMap.location_1_location}}</div>
+            <div class="citystate">{{populateMap.city}}</div>
+        </ul>
 
-<div id='map' style='width: 400px; height: 300px;'></div>
+        <div id='map' style='width: 400px; height: 300px;'></div>
+    </section>
+</section>

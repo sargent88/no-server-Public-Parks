@@ -1,16 +1,18 @@
-<h1>All the Parks</h1>
-<section>
+<section class="ParksBackground">
+    <h1 class="ParksText">All the Parks</h1>
+    <section class="parkbox">
 
-    <input type="text" placeholder="Park Name" ng-model="filterText.park">
-    <div ng-repeat="park in parks | filter: filterText">
-        <ul>
-            <strong>{{park.park}}</strong>
-            <div class='address'>{{park.location_1_location}}</div>
-            <div class='citystate'>{{park.location_1_city}}</div>
-            <div class='amenities'>{{park.amenities}}</div>
-            <button ui-sref="map({id: park.park})">View Map</button>
-        </ul>
-    </div>
-    </div>
+        <input class="parkinput" type="text" placeholder="Park Name" ng-model="filterText.park">
+        <div ng-repeat="park in parks | filter: filterText">
+            <ul>
+                <strong class="park">{{park.park}}</strong>
+                <div class="address">{{park.location_1_location}}</div>
+                <div class="citystate">{{park.location_1_city}}</div>
+                <div class="amenities">{{park.amenities}}</div>
+                <button class="parkbutton" ui-sref="map({id: park.park})">View Map</button>
+            </ul>
+        </div>
+        </div>
 
+    </section>
 </section>

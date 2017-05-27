@@ -45,7 +45,7 @@ angular.module('mainApp').controller('mapCtrl', function ($scope, $stateParams, 
     mapboxgl.accessToken = 'pk.eyJ1Ijoic2FyZ2VudDg4IiwiYSI6ImNqMzY0aHRoODAwbGszMmxpdjd5NTl6OHgifQ.zWE7w8Bs3NvC6rhFXguUTQ';
     var map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v9',
+        style: 'mapbox://styles/mapbox/basic-v9',
         center: location,
         zoom: 13.5
     });
@@ -70,7 +70,7 @@ angular.module('mainApp').controller('mapCtrl', function ($scope, $stateParams, 
 
             "layout": {
                 "icon-image": "marker-15",
-                "icon-size": 3
+                "icon-size": 1
             }
         });
     });
@@ -86,7 +86,6 @@ angular.module('mainApp').controller('parksCtrl', function ($scope, parksSrv, $s
 angular.module('mainApp').service('mainSrv', function () {
     this.test = "1 2 3";
 });
-"use strict";
 'use strict';
 
 angular.module('mainApp').service('parksSrv', function ($http) {

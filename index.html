@@ -11,14 +11,13 @@
     <title>Loading Page</title>
 </head>
 
-
 <body ng-controller="mainCtrl">
 
-    <div ng-show="showMenu">
-        <h1>This is the Home Page</h1>
-        <button ui-sref="home">Home</button>
-        <button ui-sref="parks">Parks</button>
-        <button ui-sref="contact">Contact</button>
+    <div class="MenuBar" ng-show="showMenu">
+        <!--<h1>This is the Home Page</h1>-->
+        <button class="MenuButton" id="homebutton" ui-sref="home">Home</button>
+        <button class="MenuButton" id="parksbutton" ui-sref="parks">Parks</button>
+        <button class="MenuButton" id="contactbutton" ui-sref="contact">Contact</button>
     </div>
 
 

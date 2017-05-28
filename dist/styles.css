@@ -43,4 +43,12 @@ div.HomeBackground {
   background-size: cover;
   background-repeat: no-repeat; }
 
+section.ParksBackground {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: url("../images/parks-swing.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 /*# sourceMappingURL=maps/styles.css.map */

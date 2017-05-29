@@ -23,6 +23,9 @@ angular.module('mainApp', ['ui.router']).config(function ($stateProvider, $urlRo
 });
 'use strict';
 
+angular.module('mainApp').controller('contactCtrl', function () {});
+'use strict';
+
 angular.module('mainApp').controller('mainCtrl', function ($scope, mainSrv, $stateParams, $location, parksSrv) {
     $scope.test = "testing testing";
     $scope.test2 = mainSrv.test;

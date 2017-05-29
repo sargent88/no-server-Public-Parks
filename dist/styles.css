@@ -13,27 +13,33 @@ header.WelcomeHeader {
   align-items: center; }
 
 button.welcomebutton {
-  opacity: 0.65;
   height: 100px;
   width: 250px;
   font-size: 76px;
   font-family: monospace;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: Transparent;
+  border: none;
+  outline: none; }
 
 div.MenuBar {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: fixed;
   width: 100%;
-  height: 15vh;
-  background-color: #636f6e; }
+  height: 15vh; }
 
 button.MenuButton {
   height: 65px;
   width: 150px;
   font-size: 32px;
   font-family: monospace;
-  cursor: pointer; }
+  cursor: pointer;
+  opacity: 1; }
+
+button.MenuButton:hover {
+  opacity: .75; }
 
 div.HomeBackground {
   display: flex;
@@ -50,5 +56,33 @@ section.ParksBackground {
   background: url("../images/parks-swing.jpeg");
   background-size: cover;
   background-repeat: no-repeat; }
+
+section.parkbox {
+  top: 15vh;
+  left: 35vw;
+  position: absolute; }
+
+h1.ParksText {
+  display: flex;
+  flex-wrap: wrap;
+  top: 15vh;
+  position: absolute;
+  background-color: rgba(211, 211, 211, 0.25);
+  font-family: monospace;
+  font-size: 36px;
+  width: 23vw;
+  height: 18vh;
+  left: 3vw;
+  position: absolute; }
+
+input.parkinput {
+  font-family: monospace; }
+
+section.ParksData {
+  height: 85vh;
+  width: 55vw;
+  overflow: auto;
+  font-family: monospace;
+  background-color: rgba(211, 211, 211, 0.25); }
 
 /*# sourceMappingURL=maps/styles.css.map */

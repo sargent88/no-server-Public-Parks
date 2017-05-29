@@ -1,13 +1,8 @@
-angular.module('mainApp').controller('mainCtrl', function($scope, mainSrv, $stateParams, $location, parksSrv) {
-    $scope.test = "testing testing"
-    $scope.test2 = mainSrv.test
+angular.module('mainApp').controller('mainCtrl', function($scope, mainSrv, $stateParams, parksSrv) {
 
-    if ($location.path() === '/') {
-        $scope.showMenu = false;
-    } else {
+    $scope.showMenu = false;
+    $scope.showNav = function() {
         $scope.showMenu = true;
     }
-    // console.log($location.path())
-
 
 })

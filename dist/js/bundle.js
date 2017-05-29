@@ -23,20 +23,12 @@ angular.module('mainApp', ['ui.router']).config(function ($stateProvider, $urlRo
 });
 'use strict';
 
-angular.module('mainApp').controller('contactCtrl', function () {});
-'use strict';
+angular.module('mainApp').controller('mainCtrl', function ($scope, mainSrv, $stateParams, parksSrv) {
 
-angular.module('mainApp').controller('mainCtrl', function ($scope, mainSrv, $stateParams, $location, parksSrv) {
-    $scope.test = "testing testing";
-    $scope.test2 = mainSrv.test;
-
-    if ($location.path() === '/') {
-        $scope.showMenu = false;
-    } else {
+    $scope.showMenu = false;
+    $scope.showNav = function () {
         $scope.showMenu = true;
-    }
-    // console.log($location.path())
-
+    };
 });
 'use strict';
 

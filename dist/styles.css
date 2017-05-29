@@ -85,4 +85,39 @@ section.ParksData {
   font-family: monospace;
   background-color: rgba(211, 211, 211, 0.25); }
 
+section.ContactBackground {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: url("../images/contact-tree-swing.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+section.MapBackground {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: url("../images/map-bench.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+section.mapbox {
+  top: 25vh;
+  left: 13vw;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 75vw; }
+
+ul.dispalymapaddress {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgba(211, 211, 211, 0.25);
+  font-family: monospace;
+  font-size: 20px;
+  width: 13vw;
+  height: 14vh; }
+
 /*# sourceMappingURL=maps/styles.css.map */

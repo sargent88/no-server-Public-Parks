@@ -174,12 +174,13 @@ img.me {
   z-index: 2; }
 
 .fa {
-  padding: 20px;
-  font-size: 45px;
-  width: 22.5px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%; }
+    padding: 8px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
 
 .fa:hover {
   opacity: 0.5; }
